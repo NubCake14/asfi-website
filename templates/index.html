@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/index.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <div class="totalheader">
+        <section class="header">
+            <img src="/static/imgs/sky_bg.png" id="sky">
+            <img src="/static/imgs/mountain_bg.png" id="mount">
+            <img src="/static/imgs/mountain_bg.png" id="mount" style="padding: 0; margin: 0; width: 150%;" >
+
+
+            <img src="/static/imgs/logo.png" id = "logo">
+
+
+
+            <img src="/static/imgs/manstanding_fore.png" id="man" >
+        </section>
+
+    </div>
+    <div class="bgColor">
+        <h1> </h1>
+    </div>
+    <div class="spacer"></div>
+
+    <div class="video">
+        <iframe 
+        src="https://www.youtube.com/embed/T9NXHoHNvAQ" class="trailervideo">
+        </iframe>
+    </div>
+
+    <div class="description">
+        <div class="insanity">
+            <img src="/static/imgs/sky_bg.png" class="descimage1">
+            <div class="descbulk1">
+                <h1 class="desctitle1"><i>In</i>Sanity</h1>
+                <p class="desctext1">Maintain your sanity through means of your own choosing. Shall you consume a mysterious alcoholic substance, or will you take the lives of others to enrich your own? Fight your own demons, or lose it all.</p>
+            </div>
+        </div>
+
+        <div class="gameplay">
+            
+            <div class="descbulk2">
+                <h1 class="desctitle2">Gameplay</h1>
+                <p class="desctext2">Enjoy the luxury of mechanics from your favorite platformers, along with a 2D click-and-shoot system and a fully manageable inventory. Expand your arsenal, and make life-dependent decisions on what is needed, and what is better off left behind.</p>
+            </div>   
+            <img src="/static/imgs/sky_bg.png" class="descimage2">         
+        </div>
+
+        <div class="story">
+            
+            <div class="descbulk1">
+                <h1 class="desctitle1">Story</h1>
+                <p class="desctext1">Who is Billy? What is his connection to the ∏˘´˘˘¿°ı ∏æ´”æ´Әı°æɲ? And why is he desperate to find a ≥ϐ𝖡°? Discover all of these, while trying to discover yourself along the journey.</p>
+            </div>   
+            <img src="/static/imgs/sky_bg.png" class="descimage1">         
+        </div>
+    </div>
+
+
+    <p>glitchy text</p>
+
+    <span
+  class="char"  
+  data-char="G"
+  style="
+    --char-0:'˙';
+    --char-1:'§';
+    --char-2:'º';
+    --char-3:'∞';
+    --char-4:'˙';
+    --char-5:'▒';
+    --char-6:'˙';
+    --char-7:'µ';
+    --char-8:'£';
+    --char-9:'<';">
+    </span>
+
+    
+
+    
+    <script type="text/javascript">
+        let sky = document.getElementById("sky")
+        let mount = document.getElementById("mount")
+        let man = document.getElementById("man")
+        let logo = document.getElementById("logo")
+
+        window.addEventListener('scroll', function(){
+            var yVal = window.scrollY;
+
+            // sky.style.top = yVal + 0.5 + 'px';
+            mount.style.left = yVal - 0.01 + 'px';
+            man.style.left = -yVal + 0.01 + 'px';
+            logo.style.top = yVal + 0.5 + 'px';
+
+
+            console.log(yVal);
+
+        }
+        
+        )
+    </script>
+
+    <script type="text/javascript">
+        let title = document.getElementById("logo");
+
+        var scrollThreshold = 700; 
+
+
+        window.addEventListener("scroll", function() {
+
+            var scrollY = window.scrollY;
+
+
+            if (scrollY > scrollThreshold) {
+            
+                // title.style.position = "fixed";
+                title.style.top = scrollThreshold + "px";
+            }
+        });
+
+
+
+    </script>
+
+    <script type="text/javascript">
+        // Get the header section element
+        const headerSection = document.querySelector(".header");
+
+        // Get the totalheader div element
+        const totalHeader = document.querySelector(".totalheader");
+
+        // Set the height of totalheader equal to the height of the header section
+        totalHeader.style.height = `${headerSection.clientHeight}px`;
+
+        // Update the totalheader height on window resize (to ensure responsiveness)
+        window.addEventListener("resize", () => {
+        totalHeader.style.height = `${headerSection.clientHeight}px`;
+        });
+    </script>
+    
+</body>
+</html>

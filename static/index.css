@@ -1,0 +1,171 @@
+*
+{
+
+    overflow-x: hidden;
+
+
+}
+
+body
+{
+    min-height: 1500px;
+    background-color: #252b39;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+.totalheader{
+    background-color: aqua;
+    height: 10px;
+}
+
+header img::before{
+    content: '';
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: #2c3444;
+
+}
+
+header img::after{
+    content: '';
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: #2c3444;
+    mix-blend-mode: color;
+    
+
+}
+
+header img
+{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+img{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+
+}
+
+
+.spacer{
+    height: 50px;
+    width: 100%;
+    margin-top: 1330px;
+
+
+}
+
+.video{
+    display: block;
+    width: 100%;
+    height: 99%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #1e232f;
+}
+
+.trailervideo{
+    float: right;
+    margin-right: 30%;
+    height: 330px;
+    width: 540px;
+}
+
+
+.description{
+    display: block;
+}
+
+
+.descimage1{
+    position: relative;
+    max-width: 40%;
+    height: 20%;
+    float: left;
+}
+
+.descbulk1{
+    padding: 1%;
+    color: aliceblue;
+
+}
+
+.desctitle1{
+    float: left;
+}
+
+.desctext1{
+    float: left;
+}
+
+.descimage2{
+    position: relative;
+    max-width: 40%;
+    height: 20%;
+    float: right;
+}
+
+.descbulk2{
+    margin: 1%;
+    color: aliceblue;
+
+}
+
+.desctitle2{
+    float: right;
+}
+
+.desctext2{
+    float: right;
+}
+
+.insanity{
+    margin: 3%;
+    background-color: #252b39;
+    display: flex;
+    flex-direction: row;
+}
+
+.gameplay{
+    margin: 3%;
+    background-color: #252b39;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.story{
+    margin: 3%;
+    background-color: #252b39;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
